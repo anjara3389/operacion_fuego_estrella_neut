@@ -94,7 +94,7 @@ public class OperacionController {
 	 */
 	@GetMapping("/topsecret_split")
 	@ResponseStatus(HttpStatus.CREATED)
-	public ResponseEntity<ResponseTopSecret> getPositionAndMessageSplit() {
+	public ResponseEntity<?> getPositionAndMessageSplit() {
 		try {
 			ResponseTopSecret response = new ResponseTopSecret();
 			if (kenobiSatellite.getDistance() != null && skywalkerSatellite.getDistance() != null
@@ -112,7 +112,7 @@ public class OperacionController {
 				response.setPosition(operacionService.GetLocation(distances));
 				return new ResponseEntity<ResponseTopSecret>(response, HttpStatus.OK);
 			} else {
-				return new ResponseEntity<ResponseTopSecret>(HttpStatus.NOT_FOUND);
+				return new ResponseEntity<String>("No hay suficiente información",HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
 			return new ResponseEntity<ResponseTopSecret>(HttpStatus.NOT_FOUND);
