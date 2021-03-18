@@ -58,7 +58,7 @@ La segunda parte del nivel, consiste en un servicio de tipo GET para obtener la 
 http://localhost:8080/topsecret_split
 
 
-![Con titulo](img/Segundo.PNG "titulo")
+![Con titulo](img/segundo.PNG "titulo")
  
 
 
