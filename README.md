@@ -8,7 +8,7 @@ Para ejecutar el programa:
 4. Dentro de la carpeta build/libs ejecutar el comando java -jar OperacionFuegoEstrellas-0.0.1-SNAPSHOT.jar
 
 Nivel 2
-Para probar el nivel dos, después de ejecutar el programa, se llama al servicio para obtener la ubicación y mensaje de la nave entre los tres satélites a través de la dirección: 
+Para probar el nivel dos, despuÃ©s de ejecutar el programa, se llama al servicio para obtener la ubicaciÃ³n y mensaje de la nave entre los tres satÃ©lites a travÃ©s de la direcciÃ³n: 
 
 http://localhost:8080/topsecret
 
@@ -41,8 +41,9 @@ El servicio es de tipo POST y debe tener un body JSON con la siguiente estructur
 
 
 Nivel 3
-El nivel 3 se divide en dos partes, la primera es un servicio de tipo POST que nos permitirá llenar la información de cada uno de los satélites por separado y que se usa a través de la siguiente dirección: 
+El nivel 3 se divide en dos partes, la primera es un servicio de tipo POST que nos permitirÃ¡ llenar la informaciÃ³n de cada uno de los satÃ©lites por separado y que se usa a travÃ©s de la siguiente direcciÃ³n: 
 http://localhost:8080/topsecret_split/{nombre_satelite}
+
 Se debe tener un body de tipo JSON con la siguiente estructura: 
 {
 "distance": 267.0,
@@ -50,7 +51,7 @@ Se debe tener un body de tipo JSON con la siguiente estructura:
 }
  
 
-La segunda parte del nivel, consiste en un servicio de tipo GET para obtener la ubicación de la nave entre los 3 satélites solo si se ha llenado la información de cada uno de los tres satélites desde el anterior servicio. Se usa a través de la siguiente dirección: 
+La segunda parte del nivel, consiste en un servicio de tipo GET para obtener la ubicaciÃ³n de la nave entre los 3 satÃ©lites solo si se ha llenado la informaciÃ³n de cada uno de los tres satÃ©lites desde el anterior servicio. Se usa a travÃ©s de la siguiente direcciÃ³n: 
 http://localhost:8080/topsecret_split
  
 
