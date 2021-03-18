@@ -52,9 +52,13 @@ Se debe tener un body de tipo JSON con la siguiente estructura:
 "message": ["este", "", "", "mensaje", ""]
 }
  
+![Con titulo](img/Tercero.PNG "titulo")
 
 La segunda parte del nivel, consiste en un servicio de tipo GET para obtener la ubicación de la nave entre los 3 satélites solo si se ha llenado la información de cada uno de los tres satélites desde el anterior servicio. Se usa a través de la siguiente dirección: 
 http://localhost:8080/topsecret_split
+
+
+![Con titulo](img/Segundo.PNG "titulo")
  
 
 
